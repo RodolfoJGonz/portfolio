@@ -9,9 +9,17 @@ export default async function Home() {
 
   return (
     <HydrateClient>
-      <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-        <p>Hello there! Its me!</p>
-      </main>
+      <div className="flex min-h-screen flex-col bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
+        <div className="w-screen h-screen">
+          <div className="inline-flex w-screen h-14 bg-red-400 ">
+            <div className="content px-10">
+              <a className="" href="">Home</a>
+              <a className="" href="">Not Home</a>
+              <a className="" href="">Def Not Home</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </HydrateClient>
   );
 }
